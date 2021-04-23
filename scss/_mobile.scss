@@ -1,0 +1,62 @@
+@include mobileMd{
+   main{
+        align-items: center;
+        text-align: center;
+
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+   }
+   .menu-brading, .menu-nav{
+       float: none;
+       width: 100%;
+       min-width: 0;
+
+      &.show{
+          transform: translate3d(0,0,0);
+      }
+   }
+   .menu-brading{
+    height: 25vh;
+    transform: translate3d(-100%, 0,0); 
+
+    .potrait{
+        width: 120px;
+        height: 120px;  
+         } 
+    }         
+
+    .menu-nav{
+        height: 75vh;
+        font-size: 20px;  
+        transform: translate3d(100%, 0,0);
+    }
+    .about-info{
+        display: grid;
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+                
+        grid-template-columns: 1fr;
+    } 
+    .project{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }            
+}     
+@include mobileSm{
+    main#Home h1{
+        margin-top: 10px;  
+    }
+    .project{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+}  
+ 
+
+ 

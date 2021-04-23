@@ -1,0 +1,14 @@
+{
+  "name": "potfollio",
+  "version": "1.0.0",
+  "description": "My Modern porfollio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o Dist/css/ --recursive"
+  },
+  "author": "Habeeb Olawale",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
