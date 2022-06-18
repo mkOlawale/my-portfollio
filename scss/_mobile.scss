@@ -6,6 +6,7 @@
         .lg-heading{
             line-height: 1;
             margin-bottom: 1rem;
+            margin-right: 50px;
         }
    }
    .menu-brading, .menu-nav{
@@ -46,7 +47,27 @@
     .project{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }            
+    }   
+    .skill-bars{
+        margin-top: 100px; 
+    }   
+    .skill-bars li{
+        margin-top: 20px; 
+        min-width: 100%; 
+    }
+    .skill-bars li .progress span {
+        position: absolute;
+        right: 0;
+        top: -3rem;
+        display: block;
+        font-family: "poppins-regular", sans-serif;   
+        color: white;
+        font-size: 1.1rem;
+        line-height: 1;
+        background: #313131;
+        padding: .6rem .6rem;
+        border-radius: 3px;
+    }      
 }     
 @include mobileSm{
     main#Home h1{
