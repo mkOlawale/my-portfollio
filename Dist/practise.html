@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xara AI - Payment Redefined</title>
+  <style>
+    /* [Same CSS as before — omitted here for brevity] */
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Xara</div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="btn">Get Started</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Smart Payments Powered by AI</h1>
+      <p>Xara transforms how payments work – faster, safer, and smarter.</p>
+      <a href="#" class="btn">Launch with Xara</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Why Choose Xara?</h2>
+    <div class="feature-boxes">
+      <div class="box slide-in">AI Fraud Detection</div>
+      <div class="box slide-in">Real-Time Processing</div>
+      <div class="box slide-in">Analytics Dashboard</div>
+    </div>
+  </section>
+
+  <!-- Clients Slider -->
+  <section id="clients" class="clients-slider">
+    <h2>Trusted By</h2>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide"><img src="client1.png" alt="Client 1"></div>
+        <div class="slide"><img src="client2.png" alt="Client 2"></div>
+        <div class="slide"><img src="client3.png" alt="Client 3"></div>
+        <div class="slide"><img src="client1.png" alt="Client 1"></div>
+        <div class="slide"><img src="client2.png" alt="Client 2"></div>
+        <div class="slide"><img src="client3.png" alt="Client 3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Xara. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle Navbar on Mobile
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Optional: Animate feature boxes on scroll
+    const boxes = document.querySelectorAll('.box');
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          box.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // initial check
+  </script>
+</body>
+</html>
